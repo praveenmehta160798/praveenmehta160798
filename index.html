@@ -16,30 +16,30 @@
 	<div id="header">
 			<div class="container">
 				<div class="logo">
-					<div class="name">Praveen Mehta</div>
+					<a href="#">Praveen Mehta</a>
+				</div>
+				<div class="hamburger-box">
+					<div class="box1"></div>
+					<div class="box2"></div>
+					<div class="box3"></div>
 				</div>
 				<div class="nav-bar">
-					<div class="nav-item"><a href="#">Home</a></div>
-					<div class="nav-item"><a href="#">About</a></div>
-					<div class="nav-item"><a href="#">Services</a></div>
-					<div class="nav-item"><a href="#">Projects</a></div>
-					<div class="nav-item"><a href="#">Contact</a></div>
+					<div class="nav-item"><a href="#home">Home</a></div>
+					<div class="nav-item"><a href="#about">About</a></div>
+					<div class="nav-item"><a href="#services">Services</a></div>
+					<div class="nav-item"><a href="#projects">Projects</a></div>
+					<div class="nav-item"><a href="#contact">Contact</a></div>
 					<div class="nav-item"><a href="#">Switch</a></div>
 				</div>
 			</div>
 	</div><!--Header Ends Here-->
 	
-	<div id="hamburger-box">
-		<div class="box1"></div>
-		<div class="box2"></div>
-		<div class="box3"></div>
-	</div>
 	
 	<div id="home">
 		<div class="container">
 			<div class="box1">
 				<div class="text-1">Hi, I am Praveen</div>
-				<div class="text-2">><span class="auto-type"></span></div>
+				<div class="text-2"><span class="auto-type"></span></div>
 				<div class="text-3">I am a Front-End / Full-Stack Developer. I am currently working at CloudStok Technologies as a Front-End Developer</div>
 				<div class="social-link">
 					<a href="#">
@@ -56,13 +56,140 @@
 					</a>
 					
 				</div>
-				<div class="cv-btn"><a href="#">Resume</a></div>
+				<div class="cv-btn">
+					<a href="#">Resume</a>
+				</div>
 			</div>
-			<div class="box2">
-				<img src="img/img2.svg">
-			</div>
+			<div class="box2"></div>
 		</div>
 	</div><!--Home Ends Here-->
+	
+	
+	<div id="about">
+		<div class="container">
+			<div class="box1">
+				<div class="head">About Me</div>
+				<div class="sub-box1">				
+					<div class="sub-head">A bit about me</div>
+					<div class="text">I'm a self-taught web developer and Mobile App Developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the backend development.</div>
+				</div>
+				<div class="sub-box2">
+					<div class="sub-head">Technologies and Tools</div>
+					<div class="text">Using a combination of cutting-edge technologies and reliable open-source software I build user-focused, performant apps and websites for smartphones, tablets, and desktops.</div>
+				</div>
+			</div>
+			<div class="box2">
+				<div class="sub-box1">
+					<img src="img/skill1.svg">
+					<div>HTML</div>
+				</div>
+				<div class="sub-box2">
+					<img src="img/skill2.svg">
+					<div href="#">CSS</div>
+				</div>
+				<div class="sub-box3">
+					<img src="img/skill3.svg">
+					<div href="#">JavaScript</div>
+				</div>
+				<div class="sub-box4">
+					<img src="img/skill4.svg">
+					<div href="#">Php</div>
+				</div>
+				<div class="sub-box5">
+					<img src="img/skill5.svg">
+					<div href="#">MySQL</div>
+				</div>
+			</div>
+		</div>
+	</div><!--About Ends Here-->
+	
+	
+	<div id="services">
+		<div class="container">
+			<div class="head">Services</div>
+			<div class="sub-head">What I Provide</div>
+			<div class="boxes">
+				<div class="box1">
+					<div class="box-logo">
+						<img src="img/service1.png">
+					</div>
+					<div class="box-sub-head">Web Application Development</div>
+					<div class="text">Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design authoring, including standardised code and proprietary software user experience design and search engine</div>
+				</div>
+				<div class="box2">
+					<div class="box-logo">
+						<img src="img/service2.png">
+					</div>
+					<div class="box-sub-head">Mobile Application Development</div>
+					<div class="text">We provide a range of mobile application development services including custom mobile development on Android platforms, building cross-platform apps, designing user experience and integrating novel mobile interfaces such as chat and voice</div>
+				</div>
+				<div class="box3">
+					<div class="box-logo">
+						<img src="img/service3.png">
+					</div>
+					<div class="box-sub-head">Backend Development</div>
+					<div class="text">Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.</div>
+				</div>
+			</div>
+		</div>
+	</div><!--Services Ends Here-->
+	
+	
+	<div id="projects">
+		<div class="container">
+			<div class="head">Projects</div>
+		</div>
+	</div><!--Projects Ends Here-->
+	
+	
+	<div id="contact">
+		<div class="container">
+			<div class="head">Contact</div>
+			<div class="box">
+				<div class="box1">
+					<div class="sub-head">Connect with me</div>
+					<div class="text">If you want to know more about me or my work, or if you would just like to say hello, send me a message. I'd love to hear from you.</div>
+					<form>
+						<label class="box-sub-head" for="name">Name</label> <br>
+						<input type="text" id="name" placeholder="Enter Your Name"> <br>
+						<label class="box-sub-head" for="email">Email</label> <br>
+						<input type="text" id="femail" placeholder="Enter Your Email"> <br>
+						<label class="box-sub-head" for="msg">Message</label> <br>
+						<textarea id="fmsg"  placeholder="Enter Your Message" rows="3"></textarea> <br>
+						<div>
+							<a href="mailto:praveenmehta160798@gmail.com">Send me email directly</a>
+							<input type="submit">
+						</div>
+					</form>
+				</div>
+				<div class="box2">
+					<div class="sub-box1">
+						<div class="sub-head">Email</div>
+						<div class="text">praveenmehta160798@gmail.com</div>
+					</div>
+					<div class="sub-head">Address</div>
+						<div class="text">Delhi, India</div>
+					<div class="sub-box3">
+						<div class="sub-head">Social</div>
+						<div class="social-link">
+							<a href="#">
+								<i class="fa-brands fa-facebook"></i>
+							</a>
+							<a href="#">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+							<a href="#">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a href="#">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--Contact Ends Here-->
 
 	<script src="js/index-script.js"></script>
 </body>
