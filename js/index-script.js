@@ -1,3 +1,26 @@
+/*Menu Hide By Tap Any Where Start*/
+var a = document.querySelector("#home");
+var b = document.querySelector("#about");
+var c = document.querySelector("#services");
+var d = document.querySelector("#projects");
+var e = document.querySelector("#contact");
+
+a.addEventListener("click", menuHide);
+b.addEventListener("click", menuHide);
+c.addEventListener("click", menuHide);
+d.addEventListener("click", menuHide);
+e.addEventListener("click", menuHide);
+function menuHide(){
+	navBar.style.right = "-100%";
+	hamburger1.style.transform = "rotate(0deg)";
+	hamburger1.style.background = "var(--theme-color-4)";
+	hamburger3.style.transform = "rotate(0deg)";
+	hamburger3.style.background = "var(--theme-color-4)";
+	hamburger2.style.width = "100%";
+	click = true;
+}
+/*Menu Hide By Tap Any Where End*/
+
 /*----------------------------------------------------------------------------------------*/
 
 /*Hamburger Start*/
@@ -34,45 +57,8 @@ function hamburgerToggler(){
 /*----------------------------------------------------------------------------------------*/
 
 /*Auto Type Start*/
-/*
-var keywords = [" Programmer", " Designer", " Developer"];
-var word = document.querySelector(".auto-type");
-var hide = 1, j = 0, k = 0;
-var i = 0, a = 0;
 
-setInterval(type, 200);
-
-function type(){
-	if(k == 3){
-		k = 0;
-	}
-	var keyword = keywords[k];
-	var len = keyword.length;
-	
-	if(hide == 1){
-		len = len - i;
-		if(len == -1){
-			hide = 0;
-			i = 0;
-			k = k + 1;
-		}
-		else{
-			word.innerText = keyword.substr(0, len);
-			i = i + 1;
-		}
-	}
-	else{
-		if(j == len + 1){
-			hide = 1;
-			j = 0;
-		}
-		else{
-			word.innerText = keyword.substr(0, j);
-			j = j + 1;
-		}	
-	}
-}*/
-/*------------*/
+/*Auto Type End*/
 var keyword = ["Designer", "Developer", "Programmer"];
 //var keyword = "Programmer";
 var editWord, len;
@@ -108,8 +94,6 @@ function autoType(){
 	}
 	
 }
-
-
 /*
 var len = keyword.length;
 for(var i = len; i > -2; i--){

@@ -1,3 +1,4 @@
+/*Base Styling Start*/
 :root{
 	--header-height: 75px;
 	--font-size-1: 0.875rem; /* 14px */
@@ -33,8 +34,11 @@ html{
 	
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 	text-decoration: none;
+	transition: all 0.5s;
 }
+/*Base Styling End*/
 
+/*--------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------*/
 
 /*Header Start*/
@@ -154,6 +158,7 @@ html{
 	font-weight: var(--font-weight-4);
 }
 #home .text-2{
+	margin-bottom: 20px;
 	font-size: var(--font-size-8);
 	font-weight: var(--font-weight-4);	
 	color: var(--theme-color-3);
@@ -168,11 +173,19 @@ html{
 	width: 70%;
 }
 #home .social-link{
+	margin: 40px 0px;
 }
 .social-link a{
 	font-size: var(--font-size-7);
 	color: var(--theme-color-1);
 	display: inline-block;
+	margin: 20px;
+}
+.social-link a:first-child{
+	margin-left: 0px;
+}
+.social-link a:last-child{
+	margin-right: 0px;
 }
 .social-link a:hover{
 	color: rgb(24,120,243);	
@@ -411,6 +424,10 @@ html{
 .sub-text{
 	font-size: var(--font-size-5);
 }
+#contact form label{
+	display: inline-block;
+	margin-bottom: 10px;
+}
 #contact form a{
 	font-size: var(--font-size-5);
 }
@@ -418,6 +435,7 @@ html{
 #contact form textarea{
 	width: 100%;
 	padding: 10px;
+	margin-bottom: 25px; 
 	border: 2px solid var(--theme-color-6);
 	border-radius: var(--border-radius);
 	resize: none;
@@ -454,39 +472,58 @@ html{
 }
 /*Contact End*/
 
+/*----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
 
-
-
-
-
-
-
-/* Media Query Laptop 1049px Start*/
+/* Media Query Laptop 1024px Start*/
 @media screen and (max-width: 1024px){
+	/*Base Styling Start*/
 	html{
 		font-size: 14px;
 	}
+	/*Base Styling End*/
+	
+/*----------------------------------------------------------------------------------------*/
+
+	/*Header Start*/
 	#header .nav-item a{
 		margin-right: 0px;
 	}
+	/*Header End*/
 	
+/*----------------------------------------------------------------------------------------*/
+
+	/*Home Start*/
 	#home .box2{
 		width: 350px;
 		height: 350px;
 	}
+	/*Home End*/
+	
+/*----------------------------------------------------------------------------------------*/
+	
+	/*Services Start*/
+	#services .container{
+		width: 100%;
+	}
+	/*Services End*/
 }
-/* Media Query Laptop 1049px End*/
+/* Media Query Laptop 1024px End*/
 
+/*----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
 
-
-
-
-
-/* Media Query Tab 733px Start*/
+/* Media Query Tab 768px Start*/
 @media screen and (max-width: 768px){
+	/*Base Styling Start*/
 	html{
 		font-size: 12px;
 	}
+	/*Base Styling End*/
+	
+/*----------------------------------------------------------------------------------------*/
+
+	/*Header Start*/
 	#header .nav-bar{
 		display: flex;
 		flex-direction: column;
@@ -508,28 +545,88 @@ html{
 	#header .hamburger-box{
 		display: flex;		
 	}
+	/*Header End*/
 	
-	
-}
-/* Media Query Tab 733px End*/
-
-
-
-
-
-/* Media Query Tab 733px Start*/
-@media screen and (max-width: 768px){
-	html{
+/*----------------------------------------------------------------------------------------*/
+	#home .container{
+		justify-content: center;
+		text-align: center;
+		padding-top: 75px;
 	}
+	#home .text-3{
+		width: 100%;
+	}
+	#home .social-link{
+		margin: 10px 0px;
+	}
+/*----------------------------------------------------------------------------------------*/
+	
+	#about .container{
+		padding-top: 75px;
+	}
+	#services .container{
+		padding-top: 75px;
+	}
+	#projects .container{
+		padding-top: 75px;
+	}
+	#contact .container{
+		padding-top: 75px;
+	}
+	#services .boxes > div{
+		width: 60%;
+		margin: 20px 0px;
+	}
+/*----------------------------------------------------------------------------------------*/
+	
+	#contact .box{
+		flex-direction: column;
+	}
+	#contact .box > div{
+		width: 100%;
+		text-align: left;
+	}
+	#contact .box2{
+		align-items: flex-start;
+	}	
 }
+/* Media Query Tab 768px End*/
 
+/*----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
 
+/* Media Query Tab 425px Start*/
 @media screen and (max-width: 425px){
+	/*Header Start*/
 	#header .logo a{
 		font-size: var(--font-size-5);
+	}
+	/*Header End*/
+	
+/*----------------------------------------------------------------------------------------*/
+
+	/*Home Start*/
+	#home .container{
+		width: 100%;
 	}
 	#home .box2{
 		width: 300px;
 		height: 300px;
 	}
+	.social-link a{
+	margin: 10px;
 }
+	/*Home End*/
+
+/*----------------------------------------------------------------------------------------*/
+
+	/*Services End*/
+	#services .boxes > div{
+		width: 90%;
+	/*Services End*/
+
+}
+/* Media Query Tab 425px End*/
+
+/*----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
