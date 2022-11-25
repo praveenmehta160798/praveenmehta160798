@@ -62,7 +62,7 @@ function hamburgerToggler(){
 var keyword = ["Designer", "Developer", "Programmer"];
 //var keyword = "Programmer";
 var editWord, len;
-setInterval(autoType, 300);
+setInterval(autoType, 100);
 var i = len, j = 1, k = 0;
 function autoType(){
 	len = keyword[k].length;
@@ -73,12 +73,19 @@ function autoType(){
 		k = 0;
 	}
 	if(i > -1){
+		if(i == len){
+			console.log("its running");
+			setTimeout(function(){
+				console.log("its running");
+			}, 5000); // its pending
+		}
 		editWord = keyword[k].substr(0,i);
 		document.querySelector("#home .auto-type").innerText = editWord;
 		//console.log(editWord);
 		//console.log(i);
 		i--;
 		j = 1;
+			
 	}
 	else{
 		if(j < len){			
