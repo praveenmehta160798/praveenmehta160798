@@ -1,6 +1,6 @@
 /*Base Styling Start*/
 :root{
-	--header-height: 75px;
+	--header-height: 55px;
 	--font-size-1: 0.875rem; /* 14px */
 	--font-size-2: 1rem; /* 16px */
 	--font-size-3: 1.125rem; /* 18px */
@@ -373,6 +373,48 @@ html{
 	display: flex;
 	flex-direction: column;
 }
+#projects .projects{
+	height: 70vh;
+	
+	display: flex;
+}
+#projects .projects-name-list{
+	width: 20%;
+	background: var(--theme-color-5);
+	
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	
+	overflow: hidden;
+	overflow-y: auto;
+	
+}
+#projects .projects-name-list .sub-head{
+	text-align: center;
+	background: var(--theme-color-5);
+}
+#projects .project-name{
+	padding: 20px;
+	background: var(--theme-color-1);
+	color: var(--theme-color-2);
+	border-radius: var(--border-radius);
+	margin-top: 10px;
+	line-height: 20px;
+}
+#projects .project-name:hover{
+	background: var(--theme-color-3);
+	cursor: pointer;
+}
+#projects .projects-frame-box{
+	width: 80%;
+	height: 100%;
+}
+#projects .project-frame iframe{
+	height: 70vh;
+	width: 100%;
+}
+
 /*Projects End*/
 
 /*--------------------------------------------------------------------------*/
@@ -430,6 +472,11 @@ html{
 }
 #contact form a{
 	font-size: var(--font-size-5);
+	text-decoration: underline;
+	color: var(--theme-color-4);
+}
+#contact form a:hover{
+	color: var(--theme-color-1);
 }
 #contact form input,
 #contact form textarea{
@@ -507,6 +554,32 @@ html{
 		width: 100%;
 	}
 	/*Services End*/
+
+
+
+	#projects .container{
+		padding: 5px;
+		width: 100%;
+		
+	}
+	#projects .projects{
+		height: max-content;
+		flex-direction: column;
+		align-items: center;
+	}
+	#projects .projects-name-list{
+		width: 80%;
+		max-height: 40vh;
+		padding: 10px;
+	}
+	#projects .projects-frame-box{
+		width: 100%;
+		height: 40vh;
+	}
+	#projects .project-frame iframe{
+		height: 40vh;
+		width: 100%;
+	}
 }
 /* Media Query Laptop 1024px End*/
 
@@ -563,15 +636,19 @@ html{
 	
 	#about .container{
 		padding-top: 75px;
+		width: 100%;
 	}
 	#services .container{
 		padding-top: 75px;
+		width: 100%;
 	}
 	#projects .container{
 		padding-top: 75px;
+		width: 100%;
 	}
 	#contact .container{
 		padding-top: 75px;
+		width: 100%;
 	}
 	#services .boxes > div{
 		width: 60%;
@@ -609,6 +686,10 @@ html{
 	#home .container{
 		width: 100%;
 	}
+	#home .text-1,
+	#home .text-2{
+		font-size: var(--font-size-7);
+	}
 	#home .box2{
 		width: 300px;
 		height: 300px;
@@ -621,10 +702,18 @@ html{
 /*----------------------------------------------------------------------------------------*/
 
 	/*Services End*/
+	#services .container{
+		padding: 0px 5px;
+	}
 	#services .boxes > div{
-		width: 90%;
+		width: 95%;
+		
+	}
 	/*Services End*/
-
+	
+	#contact form a{
+		font-size: var(--font-size-4);
+	}
 }
 /* Media Query Tab 425px End*/
 

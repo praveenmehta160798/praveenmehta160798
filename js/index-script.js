@@ -109,3 +109,19 @@ for(var i = len; i > -2; i--){
 	}
 }
 /*Auto Type End*/
+
+/*----------------------------------------------------------------------------------------*/
+
+/*Project Frame Switch Start*/
+var projectName = document.querySelectorAll("#projects .project-name");
+var iframe = document.querySelector("#projects iframe");
+
+projectName[0].addEventListener("click", frameSwitch1);
+function frameSwitch1(){
+	iframe.src = "https://praveenmehta160798.github.io/";
+}
+projectName[1].addEventListener("click", frameSwitch2);
+function frameSwitch2(){
+	iframe.src = "https://praveenmehta160798.github.io/001---www.sarkariresult.com/";
+}
+/*Project Frame Switch End*/
